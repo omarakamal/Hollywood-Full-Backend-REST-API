@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="loginbox" style="margin-top: 50px;" class="col-md-3 col-md-offset-2 col-sm-6 col-sm-offset-2">
+            <div class="card border-info">
+                <div class="card-header bg-info">
+                    Sign Up
+                </div>
+
+                <div class="card-body">
+                    <div class="card-text">
+
+                        <!-- Login Form -->
+                        <form action="#" th:object="${user}" th:action="@{/sign-up}" method="POST" class="form-horizontal" method="POST">
+
+                    
+
+                            <!-- User name -->
+                            <div style="margin-bottom: 25px;" class="input-group">
+                                <input type="text" th:field="*{username}" placeholder="username" class="form-control" />
+                            </div>
+
+                            <!-- Password -->
+                            <div style="margin-bottom: 25px;" class="input-group">
+                                <input type="password" th:field="*{password}" placeholder="password" class="form-control" />
+                            </div>
+
+                            <!-- Login/Submit Button -->
+                            <div style="margin-top: 10px;" class="form-group">
+                                <div class="col-sm-6 controls">
+                                    <button type="submit" class="btn btn-success">Signup</button>
+                                </div>
+                            </div>
+
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
