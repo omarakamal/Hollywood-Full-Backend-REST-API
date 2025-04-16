@@ -11,6 +11,7 @@ import com.omargroup.movies_thyme.model.Person;
 import com.omargroup.movies_thyme.repository.MovieCastRepository;
 import com.omargroup.movies_thyme.repository.PersonRepository;
 import com.omargroup.movies_thyme.specification.PersonSpecification;
+import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
